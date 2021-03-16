@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bootrails Blocks is a Bootstrap v5 theme for Ruby-on-Rails.
 
-Things you may want to cover:
 
-* Ruby version
+## What's inside
 
-* System dependencies
+It relies on Webpack(er), and standard, last-version of Bootstrap v5.
 
-* Configuration
+The core SCSS of Bootstrap is left "as-is" in order to support version upgrade, and to stick with Bootstrap awesome productivity.
 
-* Database creation
+Customization is achieved through :
 
-* Database initialization
+ - One global SCSS file, whose primary goal is to set up Bootstrap's SaSS variables,
+ - One tiny SCSS file per "block"
 
-* How to run the test suite
+It includes :
 
-* Services (job queues, cache servers, search engines, etc.)
+ - Beautiful, modern, elegant theme
+ - Open-source, PR and insights are welcome
+ - Integration with Hotwire and Turbo for forms
+ - Integration with Toasts messages
 
-* Deployment instructions
+## Philosophy
 
-* ...
+Bootstrap is perfect when you have to ship quickly and you have no designer. Tailwind is awesome. I'm aware the Rails community is now using Tailwind a lot, however it comes with many limitations, notably the lack of dynamic UI components.
+
+The good news is : the very last version of Bootstrap (v5) is heavily inspired from Tailwind, so you can have the best of both world.
+
+## License
+
+License detail : free for any non-commercial project. There is a fee for other projects, please contact me on Twitter @bdavidxyz
+
+
