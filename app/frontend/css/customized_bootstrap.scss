@@ -1,0 +1,132 @@
+
+/** 
+* Custom settings
+* Any settings that is not from Bootstrap should be
+* boldly prefixed (here with "my-") to avoid confusions.
+*/
+$my-navbar-height: 60px;
+ 
+/** 
+* 
+* Bootstrap settings
+* 
+*/
+$enable-negative-margins: true;
+$rfs-base-value: .8rem;
+$enable-smooth-scroll: false;
+
+/** 
+* 
+* Buttons
+* 
+*/
+
+/** 
+* 
+* Headings
+* 
+*/
+$headings-font-weight: 700;
+
+/** 
+* 
+* Typography
+* 
+*/
+$lead-font-weight: 400;
+
+/** 
+* 
+* Colors
+* 
+*/
+$blue:    #0d58c9;
+$indigo:  #463dbb;
+$purple:  #4f44e0;
+$pink:    #e83e8c;
+$red:     #e34f2f;
+$orange:  #df7800;
+$yellow:  #ffc107;
+$green:   #219464;
+$teal:    #31bc60;
+$cyan:    #88b3f0;
+
+$primary:       #0d58c9;
+$secondary:     #89898e;
+$success:       #31bc60;
+$info:          #88b3f0;
+$warning:       #df7800;
+$danger:        #e34f2f;
+$light:         #f7f7f9;
+$dark:          #1e2029;
+
+
+/** 
+* 
+* Container
+* 
+*/
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+
+/** 
+* 
+* Imports
+* 
+*/
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    ),
+    "font-weight": (
+      property: font-weight,
+      class: 'fw',
+      values: (
+        100: 100,
+        200: 200,
+        300: 300,
+        400: 400,
+        500: 500,
+        600: 600,
+        700: 700,
+        800: 800,
+        900: 900,
+      )
+    )
+  )
+);
+
+/** 
+* 
+* Refinements.
+* 
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+div.invalid-feedback, div.valid-feedback {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.form-control.is-invalid {
+  border-width: 2px;
+}
+
+

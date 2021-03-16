@@ -3,6 +3,8 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+import 'bootstrap-icons/font/bootstrap-icons.css'
+
 import '../js/bootstrap_js_files.js'  
 import Rails from "@rails/ujs"
 import "@hotwired/turbo-rails"
