@@ -2,6 +2,9 @@
 
 Bootrails Blocks is a Bootstrap v5 theme for Ruby-on-Rails.
 
+## Motivation
+
+There are tons of Bootstrap theme, but not much are V5, and not much are pre-integrated with Rails.
 
 ## What's inside
 
@@ -17,7 +20,6 @@ Customization is achieved through :
 It includes :
 
  - Beautiful, modern, elegant theme
- - Open-source, PR and insights are welcome
  - Integration with Hotwire and Turbo for forms
  - Integration with Toasts messages
 
@@ -26,6 +28,11 @@ It includes :
 Bootstrap is perfect when you have to ship quickly and you have no designer. Tailwind is awesome. I'm aware the Rails community is now using Tailwind a lot, however it comes with many limitations, notably the lack of dynamic UI components.
 
 The good news is : the very last version of Bootstrap (v5) is heavily inspired from Tailwind, so you can have the best of both world.
+
+## Inspiration comes from
+
+ - Froala design blocks : combine blocks to get things done
+ - Clean and elegant atmosphere from nextjs.org and panelbear.com
 
 ## License
 
