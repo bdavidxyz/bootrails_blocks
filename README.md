@@ -14,7 +14,7 @@ The core SCSS of Bootstrap is left "as-is" in order to support version upgrade, 
 
 Customization is achieved through :
 
- - One global SCSS file, whose primary goal is to set up Bootstrap's SaSS variables,
+ - One global SCSS file, whose primary goal is to set up Bootstrap's SCSS variables,
  - One tiny SCSS file per "block"
 
 It includes :
@@ -33,6 +33,26 @@ The good news is : the very last version of Bootstrap (v5) is heavily inspired f
 
  - Froala design blocks : combine blocks to get things done
  - Clean and elegant atmosphere from nextjs.org and panelbear.com
+
+
+## Installation
+
+### 1. Clone the repository
+
+Then copy/paste any section you want
+
+### 2. From a fresh new Rails app
+
+Start by following this guide : https://bootrails.com/blog/rails-bootstrap-tutorial
+
+Then
+
+add gem 'hotwire-rails' to Gemfile
+bin/rails bundle:install
+bin/rails hotwire:install
+
+Then copy paste app/frontend/packs/application.scss from this repo
+And all app/frontend/css/components/* from this repo
 
 ## License
 

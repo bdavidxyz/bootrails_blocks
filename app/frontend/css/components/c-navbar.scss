@@ -1,0 +1,34 @@
+
+/* change the navbar background color */
+.c-navbar {
+  background-color: rgba(255,255,255,0.95);
+}
+/* change the navbar brand and text color */
+.c-navbar .navbar-brand,
+.c-navbar .navbar-text {
+  color: #1d2d35;
+}
+/* change the navbar link color */
+.c-navbar .navbar-nav .nav-link {
+  color: rgba(0,0,0,.55);
+  font-weight: 500;
+  letter-spacing: .07rem;
+  margin-right: .5rem;
+}
+/* change the color of active or hovered links in navbar */
+.c-navbar .nav-item.active .nav-link,
+.c-navbar .nav-item:focus .nav-link,
+.c-navbar .nav-item:hover .nav-link {
+  color: black;
+}
+
+a.c-navbar-button {
+  margin-top: 0.19rem;
+  font-weight: 500;
+  margin-left: 0;
+  margin-bottom: .5rem;
+  @include media-breakpoint-up(md) { 
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+}
