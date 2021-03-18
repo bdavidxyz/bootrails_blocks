@@ -3,6 +3,11 @@
 .c-navbar {
   background-color: rgba(255,255,255,0.95);
 }
+
+.c-navbar .navbar-nav {
+  align-items: center;
+}
+
 /* change the navbar brand and text color */
 .c-navbar .navbar-brand,
 .c-navbar .navbar-text {
@@ -10,9 +15,9 @@
 }
 /* change the navbar link color */
 .c-navbar .navbar-nav .nav-link {
-  color: rgba(0,0,0,.55);
+  color: rgba(18, 20, 29, .5);
   font-weight: 500;
-  letter-spacing: .07rem;
+  letter-spacing: .01rem;
   margin-right: .5rem;
 }
 /* change the color of active or hovered links in navbar */
@@ -23,12 +28,9 @@
 }
 
 a.c-navbar-button {
-  margin-top: 0.19rem;
   font-weight: 500;
   margin-left: 0;
-  margin-bottom: .5rem;
   @include media-breakpoint-up(md) { 
-    margin-bottom: 0;
     margin-left: 1rem;
   }
 }
