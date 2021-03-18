@@ -20,14 +20,24 @@
             </a>
           </li>
           <li class="nav-item">
-            <%= link_to 'Pricing', '#', class: 'nav-link my-0' %>
+            <a class="nav-link my-0 <%= v.is_pricing_path? ? 'active' : '' %>" href="#">
+              Pricing
+              <% if v.is_pricing_path? %>
+              <span class="visually-hidden">(current)</span>
+              <% end %>
+            </a>
           </li>
           <li class="nav-item">
-            <%= link_to 'Blocks', blocks_path, class: 'nav-link my-0' %>
+            <a class="nav-link my-0 <%= v.is_block_path? ? 'active' : '' %>" href="<%= blocks_path %>">
+              Blocks
+              <% if v.is_block_path? %>
+              <span class="visually-hidden">(current)</span>
+              <% end %>
+            </a>
           </li>
           <li class="nav-item">
             <a class="c-navbar-button px-4 btn btn-primary " href="#">
-              Buy
+              Buy it now <i class="bi bi-arrow-right"></i>
             </a>
           </li>
         </ul>
