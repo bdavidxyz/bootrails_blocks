@@ -19,22 +19,34 @@
               <% end %>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link my-0 <%= v.is_pricing_path? ? 'active' : '' %>" href="#">
-              Pricing
-              <% if v.is_pricing_path? %>
-              <span class="visually-hidden">(current)</span>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle <%= v.is_section_path? ? 'active' : '' %>" href="<%= sections_path %>" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sections
+              <% if v.is_section_path? %>
+                <span class="visually-hidden">(current)</span>
               <% end %>
             </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Heroes</a></li>
+              <li><a class="dropdown-item" href="#">Features</a></li>
+              <li><a class="dropdown-item" href="#">Pricings</a></li>
+              <li><a class="dropdown-item" href="#">Footers</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link my-0 <%= v.is_block_path? ? 'active' : '' %>" href="<%= blocks_path %>">
-              Blocks
-              <% if v.is_block_path? %>
-              <span class="visually-hidden">(current)</span>
-              <% end %>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown2
             </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
+
           <li class="nav-item">
             <a class="c-navbar-button px-4 btn btn-primary " href="#">
               Buy it now <i class="bi bi-arrow-right"></i>

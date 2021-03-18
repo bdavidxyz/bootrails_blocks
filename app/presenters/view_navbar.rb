@@ -13,8 +13,8 @@ class ViewNavbar
     @context[:current_path].include?('example')
   end
   
-  def is_block_path?
-    @context[:current_path].include?('block')
+  def is_section_path?
+    @context[:current_path].include?('section')
   end
   
   def is_pricing_path?
