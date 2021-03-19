@@ -1,3 +1,7 @@
-<div class="bg-white text-dark c-example mt-5 py-5">
-  <%= params[:id] %>
+<div>
+  <% if params[:id] == 'black-white' %>
+    <%= render 'black_white' %>
+  <% elsif params[:id] == 'primary-color' %>
+    <%= render 'primary_color' %>
+  <% end %>
 </div>
