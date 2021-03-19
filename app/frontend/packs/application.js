@@ -11,7 +11,13 @@ import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+// Added by hotwire-rails
+import "controllers"
+
+
+
 Rails.start()
 ActiveStorage.start()
 
-import "controllers"
+const images = require.context('../img', true)
+
