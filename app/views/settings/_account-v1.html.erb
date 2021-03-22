@@ -1,48 +1,46 @@
-<div class="c-account-v1 container py-5">
-  <ul class="nav nav-tabs mb-5">
-    <li class="nav-item">
-      <a class="nav-link active" href="/settings/account/">Account</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " href="/settings/notifications/">Notifications</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " href="/settings/integrations/">Integrations</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " href="/settings/billing/">Usage &amp; Billing</a>
-    </li>
-  </ul>
-  <div class="mb-5 p-4 card">
-    <h5>bdavidxyz</h5>
-    <p class="text-muted mb-1">bdavidxyz@gmail.com</p>
-    <p class="text-muted mb-4">Joined on <span>Jan. 27, 2021, 7:04 p.m.</span></p>
-    <div class="mb-3 d-flex flex-row">
-      <a class="btn bg-white btn-sm mr-2" href="/settings/account/change-email/">Change email</a>
-      <form class="" action="/settings/account/reset-password/" method="post">
-        <input type="hidden" name="csrfmiddlewaretoken" value="OReXL36GQlw5SdMIjygWZh7vIh7IyerN6nrJgjB1wtJKQdlJsTMSu5tVpdkBGurn">
-        <button type="submit" class="btn bg-white btn-sm">Reset password</button>
+<div class="c-settings-v1">
+
+  <div class="c-account-v1 container py-5">
+    <ul class="nav nav-tabs mb-5">
+      <li class="nav-item">
+        <a class="nav-link active" href="/settings/account/">Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/settings/notifications/">Notifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/settings/integrations/">Integrations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/settings/billing/">Usage &amp; Billing</a>
+      </li>
+    </ul>
+    <div class="mb-5 p-4 card">
+      <h5>myname</h5>
+      <p class="text-muted mb-1">myname@myemail.com</p>
+      <p class="text-muted mb-4">Joined on <span>Jan. 27, 2021, 7:04 p.m.</span></p>
+      <div class="mb-3 d-flex flex-row">
+        <a class="btn bg-white btn-sm me-2" href="#">Change email</a>
+        <form class="" action="#" method="post" onsubmit="return false;">
+          <button type="submit" class="btn bg-white btn-sm">Reset password</button>
+        </form>
+      </div>
+    </div>
+    <div class="mb-5 p-4 card">
+      <form method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-group mt-5">
+            <label for="id_name">Display Name</label>
+            <input type="text" name="name" value="myname" maxlength="254" class="textinput textInput form-control" required="" id="id_name">
+          </div>
+        </fieldset>
+        <div class="mt-4">
+          <input type="submit" name="submit" value="Save" class="btn btn-primary btn btn-primary btn-sm" id="submit-id-submit">
+        </div>
       </form>
     </div>
   </div>
-  <div class="mb-5 p-4 card">
-    <form method="post"> <input type="hidden" name="csrfmiddlewaretoken" value="OReXL36GQlw5SdMIjygWZh7vIh7IyerN6nrJgjB1wtJKQdlJsTMSu5tVpdkBGurn">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <div id="div_id_name" class="form-group"> <label for="id_name" class=" requiredField">
-            Display Name<span class="asteriskField">*</span> </label>
-          <div class=""> <input type="text" name="name" value="bdavidxyz" maxlength="254" class="textinput textInput form-control" required="" id="id_name"> </div>
-        </div>
-      </fieldset>
-      <div class="buttonHolder"> <input type="submit" name="submit" value="Save" class="btn btn-primary btn btn-primary btn-sm" id="submit-id-submit">
-      </div>
-    </form>
-  </div>
-  <div class="mb-5 p-4 card">
-    <h5>Danger zone</h5>
-    <div>
-      <p>Once you delete your account, there is no going back. Please be certain.</p>
-      <a class="btn btn-danger btn-sm" href="/settings/account/delete/">Delete account</a>
-    </div>
-  </div>
+  
 </div>
+
