@@ -1,0 +1,42 @@
+<div class="c-settings-v1">
+  <div class="c-notifications-v1 container py-5">
+    <ul class="nav nav-tabs mb-5">
+      <li class="nav-item">
+        <a class="nav-link " href="<%= setting_path('account-v1') %>">Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="<%= setting_path('notifications-v1') %>">Notifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Usage &amp; Billing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="<%= setting_path('delete-v1') %>">Delete account</a>
+      </li>
+    </ul>
+    <div class="mb-5 p-4 card">
+      <form>
+        <fieldset>
+          <legend class="mb-3">Marketing Communications</legend>
+          <div class="form-group">
+            <div id="" class="form-check">
+              <input type="checkbox" name="accepted_marketing_emails" class="form-check-input cursor-pointer" id="id_accepted">
+              <label for="id_accepted" class="form-check-label cursor-pointer" >
+                I would like to receive occasional email updates and special offers for Bootrails products, services, and events.
+              </label>
+            </div>
+            <div id="" class="form-check">
+              <input type="checkbox" name="accepted_marketing_newletter" class="form-check-input cursor-pointer" id="id_accepted2">
+              <label for="id_accepted2" class="form-check-label cursor-pointer">
+                I would like to receive the monthly newsletter
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="buttonHolder mt-5">
+          <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
