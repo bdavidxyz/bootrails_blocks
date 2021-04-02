@@ -1,8 +1,41 @@
 <div class="c-auth">
-
   <div class="c-auth-login">
-    auth login
-  </div>
-  
-</div>
 
+    <div class="container py-5 d-flex flex-column">
+
+      <a class="c-auth-logo mb-4" href="#">
+        <img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1612444576/rails/bootrails_logo.png" width="auto" height="38">
+        MyApp
+      </a>
+
+      <div class="col-12 col-md-8 col-lg-5 p-4 p-md-5 card">
+        <h4 class="mb-4">Sign in to your account</h4>
+        <div>
+          <form method="post">
+            <div id="div_id_username" class="form-group">
+              <label for="id_username" class=" requiredField">
+                Email <span class="text-danger">*</span>
+              </label>
+              <div class=""> <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="254" class="textinput textInput form-control" required="" id="id_username"> </div>
+            </div>
+            <div id="div_id_password" class="form-group">
+              <label for="id_password" class=" requiredField">
+                Password <span class="text-danger">*</span>
+              </label>
+              <div class="">
+                <input type="password" name="password" autocomplete="current-password" class="textinput textInput form-control" id="id_password">
+              </div>
+            </div>
+            <button type="submit" class="mt-4 btn btn-primary w-100">Continue</button>
+          </form>
+          <div class="d-flex mt-3">
+            <small class="text-muted text-center w-100">
+            <a href="#">Forgot your password?</a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <p class="text-muted text-sm mt-3">Don't have an account yet? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+</div>
