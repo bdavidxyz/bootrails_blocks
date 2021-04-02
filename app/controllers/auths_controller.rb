@@ -1,0 +1,3 @@
+class AuthsController < ApplicationController  
+  
+end  
