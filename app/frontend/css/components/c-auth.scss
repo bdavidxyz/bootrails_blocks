@@ -1,3 +1,29 @@
 .c-auth {
   background-color: #f7f7f9;
+  color: #12141d;
+  a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
+
+a.c-auth-submit:hover {
+  text-decoration: none;
+}
+
+.c-auth-label {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+a .c-auth-logo {
+  text-decoration: none;
+  color: #12141d;
+  font-weight: 800;
+  margin-left: .25rem;
+  font-size: 1.25rem;
+}
+
