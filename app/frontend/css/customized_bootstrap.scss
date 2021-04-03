@@ -16,7 +16,6 @@ $rfs-base-value: .8rem;
 $enable-smooth-scroll: false;
 $enable-shadows: false;
 $enable-rounded: true;
-
 /** 
 * 
 * Buttons
@@ -40,6 +39,7 @@ $headings-font-weight: 700;
 * 
 */
 $lead-font-weight: 400;
+$small-font-size: .875rem;
 
 /** 
 * 
@@ -153,4 +153,10 @@ div.invalid-feedback, div.valid-feedback {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
