@@ -53,8 +53,9 @@ $> bin/rails bundle:install
 
 $> bin/rails hotwire:install
 
-Then copy paste app/frontend/packs/application.scss from this repo
-And all app/frontend/css/components/* from this repo
+Then copy paste app/frontend/packs/application.scss from this repository,
+
+And all app/frontend/css/components/* from this repository also.
 
 ## License
 
