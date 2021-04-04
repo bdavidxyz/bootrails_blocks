@@ -48,8 +48,10 @@ Start by following this guide : https://bootrails.com/blog/rails-bootstrap-tutor
 Then
 
 add gem 'hotwire-rails' to Gemfile
-bin/rails bundle:install
-bin/rails hotwire:install
+
+$> bin/rails bundle:install
+
+$> bin/rails hotwire:install
 
 Then copy paste app/frontend/packs/application.scss from this repo
 And all app/frontend/css/components/* from this repo
